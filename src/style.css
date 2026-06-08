@@ -7,17 +7,17 @@ body {
   text-transform: uppercase;
 }
 
+:root {
+  --accent-color: #00acdc;
+}
+
 .logo {
   display: block;
   height: 40px;
   width: 40px;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 
 .header {
   display: flex;
@@ -38,13 +38,13 @@ a {
 
 .nav__list {
   display: flex;
-  gap: 20px;
   margin: 0;
   padding: 0;
 }
 
 .nav__item {
   list-style: none;
+  margin-right: 20px;
 }
 
 .img {
@@ -55,7 +55,7 @@ a {
   position: relative;
   display: flex;
   align-items: center;
-  height: 60px;
+
 }
 
 .nav {
@@ -66,12 +66,12 @@ a {
 }
 
 a:hover {
-  color: #00acdc;
+  color: var(--accent-color);
   transition: color 0.3s;
 }
 
 .nav__link.is-active {
-  color: #00acdc;
+  color: var(--accent-color);
 }
 
 .nav__link.is-active::after {
