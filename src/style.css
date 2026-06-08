@@ -29,7 +29,7 @@ body {
 a {
   display: flex;
   align-items: center;
-  height: 60px;
+
   text-decoration: none;
   color: #000;
 }
@@ -38,10 +38,10 @@ a {
   display: flex;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .nav__item:not(:last-child) {
-  list-style: none;
   margin-right: 20px;
 }
 
@@ -53,14 +53,10 @@ a {
   position: relative;
   display: flex;
   align-items: center;
+  height: 60px;
 }
 
-.nav {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 
 a:hover {
   color: var(--accent-color);
